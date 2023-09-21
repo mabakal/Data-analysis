@@ -1,8 +1,6 @@
 ---
-title: "Visualisation de données"
-author: "BADJO Dibéa koffi"
-format: html
-editor: visual
+title: "Untitled"
+output: github_document
 ---
 
 ## Visualisation de données
@@ -11,15 +9,15 @@ editor: visual
 
 Il n'est pas évident de tirer le maximum d'information sur les points de données sous formes de tableau, il est difficile de voir la répartition des données sur un ligne ordonnées, de voir le mode et bien d'autre information utils pour tirer une conclusion, pour remedier á cela il nous faut faire appèle á la visualisation de données. La visualisation de données est une representation graphique de données qui nous permettent de mettre en évidence les relations caché entre les points de données. La visualisation de données est très important dans le pipline d'analyse de données, dans la suite de se qui suit nous allons vous présenter les graphs fréquement utilisé dans l'analyse de données.
 
-### Importance de la visualisation de donnée
+#### Importance de la visualisation de donnée
 
--   Compréhension intuitive : Les humains sont très viuels de nature, en representant les données sous forme de graph il ont une facilité de comprendre de manière intuitive les données et d'extraire les relations caché d'elle.
+Compréhension intuitive : Les humains sont très viuels de nature, en representant les données sous forme de graph il ont une facilité de comprendre de manière intuitive les données et d'extraire les relations caché d'elle.
 
--   Détection d'anomalie : Lors du collecte de données, une anomalie peut subvenir, ce qui peux influencé énormement l'éfficacité des résultats de l'analyse. La visualisation de données permet de détecter facilement les anomalies dans le données.
+Détection d'anomalie : Lors du collecte de données, une anomalie peut subvenir, ce qui peux influencé énormement l'éfficacité des résultats de l'analyse. La visualisation de données permet de détecter facilement les anomalies dans le données.
 
--   Explorer et découvrir : On peux explorer et découvir les relation inenttendus qui pourraient ne pas être évidentes lors de l'analyse statististique
+Explorer et découvrir : On peux explorer et découvir les relation inenttendus qui pourraient ne pas être évidentes lors de l'analyse statististique
 
--   Et bien d'autre que vous découvrirez par vous même
+Et bien d'autre que vous découvrirez par vous même
 
 Le premier graph avec lequel nous allons commencer est le diagramme en barres
 
@@ -36,8 +34,6 @@ data("iris")
 iris %>% ggplot(aes(Species)) + geom_bar(aes(fill = Species)) + labs(title = "Diagramme en barres", x = "Espèces", y = "Nombres" )
 ```
 
-### 
-
 #### Histogramme
 
 C'est l'équivalence du diagramme de barres pour les variables continues. Au lieu qu'une barres représente une catégorie de données dans ce cas une barres va représenter une intervalle. La longueur de la barres correspond á la fréquence de valeurs de cette variable qui tombe dans cette intervalle. L'exemple ci-dessous est une illustration.
@@ -51,7 +47,7 @@ iris %>% ggplot(aes(Sepal.Length)) + geom_histogram(aes(color = "black"), bins =
 C'est le graphique le plus souvent utilisé. Il représente la relation entre deux valeures continue. Chaque point représente une paire de valeurs. Il est efficace pour faire sortir la tendence entre deux variable.
 
 ```{r}
-iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) + geom_point(aes(color = Species))  + labs(title = "Nuage de point", x = "Longueur sépale", y = "Largeur sépale")
+iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) + geom_point(aes(color = Species)) + labs(title = "Nuage de point", x = "Longueur sépale", y = "Largeur sépale")
 ```
 
 #### Diagramme en violon
@@ -75,7 +71,7 @@ iris %>% ggplot(aes(Species, Sepal.Length)) + geom_boxplot(aes(fill = Species))
 Représente la relation entre deux variables continues en connectant les points par des lignes. Elle á l'avantage de montrer la tendance et l'évolution dans le temps des valeurs. Dans ce exemple la relation entre la température et la pression est montré
 
 ```{r}
-data("pressure")
+data("pressure") 
 pressure %>% ggplot(aes(temperature, pressure)) + geom_line(aes(color = "red")) + labs(title = "Relation entre la température et la pression", x = "Temperature", y = " Pression")
 ```
 
@@ -84,11 +80,9 @@ pressure %>% ggplot(aes(temperature, pressure)) + geom_line(aes(color = "red")) 
 Il donne une vue relative qu'occupe une catégories sur une part total. elle est très utilisé pour mettre en évidence le pourcentage occupé par la valeur d'une variable discrète sur un total.
 
 ```{r}
-iris %>% ggplot(aes(x = "",y = Species)) +  geom_bar(stat =  "identity" ,width = 1, aes(fill = Species))   + coord_polar("y")
+iris %>% ggplot(aes(x = "",y = Species)) + geom_bar(stat ="identity" ,width = 1, aes(fill = Species)) + coord_polar("y")
 ```
 
-#### 
-
-### Conclusion
+Conclusion
 
 Nous avons parcourus les graphiques fréquenment utilisés en visualisation de données, ce code n'est que la structure basique et peux être facilement modifier et ajouter d'autre éléments.
