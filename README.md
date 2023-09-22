@@ -7,3 +7,9 @@ Au fil du temps, le volume de données collectées a connu une croissance expone
 
 Les experts chargés d'analyser ces données sont appelés les Data Analysts. Leur demande sur le marché du travail est en constante augmentation, car ils sont capables de travailler dans une multitude de domaines. Si vous aspirez à devenir Data Analyst, ce repository vous offre des cours sur l'analyse de données, sur lesquels vous pouvez vous appuyer pour débuter votre parcours.
 </p>
+<h3>Mise en place</h3>
+<p>
+  Les cours de ce repertoire sont écris dans deux languages principaux, le python et le R. Pour maximiser la compréhension de ce cours vous devez disposé un minimum de connaissance dans ces languages. <br>
+  <a href="https://cran.r-project.org/"> Installer le language R et </a> <a href = "https://posit.co/download/rstudio-desktop/">L'environnement de développement intégrer RStudio</a> <br>
+  <a href= "https://github.com/mabakal/FormationPython/blob/main/Cours/introduction.ipynb">Reférez au cours de python disponible pour installer jupyter et apprendre les bases de python si vous n'en disposé pas</a>
+</p>
