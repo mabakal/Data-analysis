@@ -11,5 +11,5 @@ Les experts chargés d'analyser ces données sont appelés les Data Analysts. Le
 <p>
   Les cours de ce repertoire sont écris dans deux languages principaux, le python et le R. Pour maximiser la compréhension de ce cours vous devez disposé un minimum de connaissance dans ces languages. <br>
   <a href="https://cran.r-project.org/"> Installer le language R et </a> <a href = "https://posit.co/download/rstudio-desktop/">L'environnement de développement intégrer RStudio</a> <br>
-  <a href= "https://github.com/mabakal/FormationPython/blob/main/Cours/introduction.ipynb">Reférez au cours de python disponible pour installer jupyter et apprendre les bases de python si vous n'en disposé pas</a>
+  <a href= "https://github.com/mabakal/FormationPython/blob/main/Cours/introduction.ipynb">Reférez au cours de python disponible pour installer jupyter et apprendre les bases de python si vous n'en disposez pas</a>
 </p>
